@@ -1,19 +1,23 @@
----
-## 💰 Global Commercial Terms & Licensing (v1.0)
-The Scent-ID Foundation governs the issuance and certification of digital olfactory identities. Our pricing structure is built on First Principles to ensure scalability and technical integrity.
+# 氣味識別協議 (Scent-ID Protocol) v1.0
 
-### 1. Unique SID Issuance (The Identity Layer)
-- **Fee:** $50 USD / per ID (One-time)
-- **Description:** For every unique 256-dimensional coordinate set (whether a single scent or a complex blend), a permanent Unique Scent ID (SID) is issued with SHA-256 encryption.
+## 🔬 技術核心架構 (Core Architecture)
+- **256 維化學分子座標 (S-001 to S-256):** 全球首創數位化氣味建模標準，精準定義感官空間。
+- **SHA-256 加密索引:** 確保每一個氣味 ID 的唯一性、不可篡改性與數位溯源。
+- **動態物理參數:** 整合超音波霧化震動頻率與空氣擴散演算法，實現跨裝置氣味還原。
 
-### 2. Scent-ID Certification (The Trust Layer)
-- **Fee:** $1,500 USD / Annum
-- **Description:** Licensing for the "Scent-ID Certified" label and official QR code usage. Includes access to the global cloud verification database and technical synchronization.
+## 💰 全球商業條款及授權 (Commercial Terms)
+氣味辨識基金會 (Scent-ID Foundation) 負責數位嗅覺身分的頒發、認證與物理層參數授權。
 
-### 3. Dynamic Physics Modulating (The Engineering Layer)
-- **Fee:** Project-based Quotation (Customized API Integration)
-- **Core Parameters:** - **Vibration Frequency:** Precise ultrasonic modulation for molecular dispersion.
-    - **Persistence Control:** Time-decay algorithm (T-0 to T-max).
-    - **Spatial Volumetric Range:** Coverage optimization (up to 1,000 m³).
-- **Description:** Specialized parameters for high-end commercial environments (e.g., Flagship stores, Exhibitions) to control scent intensity and duration via hardware-software synergy.
----
+### 1. 唯一 SID 頒發 (身分層 - Identity Layer)
+- **費用:** 每張身分證件 **50 美元** (一次性)
+- **描述:** 針對每個獨特的 256 維座標集（無論單一或混合味道），頒發永久且加密的唯一香味 ID (SID)。
+
+### 2. 氣味辨識認證 (信任層 - Trust Layer)
+- **費用:** 每年 **1,500 美元**
+- **描述:** 取得「Scent-ID Certified」認證標籤、官方 QR Code 使用權，並包含雲端資料庫同步功能。
+
+### 3. 動態物理調變 (工程層 - Engineering Layer)
+- **費用:** 依專案報價 (客製化 API 整合)
+- **核心參數:** - **振動頻率:** 精確超音波調製技術。
+  - **持久性控制:** 時間衰減演算法 (留香時間控制)。
+  - **空間體積範圍:** 覆蓋範圍最佳化 (高達 1,000 立方公尺)。
