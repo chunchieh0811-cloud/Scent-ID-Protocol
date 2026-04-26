@@ -1,16 +1,127 @@
 {
-  "sid_index": "SID-CH-N5",
-  "brand": "Chanel",
-  "name": "No. 5",
-  "version": "v1.0.0",
-  "coordinates": {
-    "S-042": 88,
-    "S-115": 72,
-    "S-201": 45
+  "protocol_manifest": {
+    "project": "Scent-ID Global",
+    "mission": "Scent-ID is not merely a scent technology platform. It is the identity, interoperability, and economic layer for the global machine-olfaction ecosystem.",
+    "vision": "Just as images became pixels, music became digital audio, and text became Unicode, scent is now becoming programmable.",
+    "architecture": "Powered by Aetherbit AI Agent Architecture (Planning, Memory, Tool Use, Perception)",
+    "official_repo": "https://github.com/aetherbit-base/Scent-ID-Global",
+    "version": "1.0.0-stable"
   },
-  "certification": {
-    "status": "active",
-    "issued_by": "Scent-ID Foundation",
-    "verified_via": "SHA-256"
+
+  "asset_identity": {
+    "sid_18": "#140D2909A405030000",
+    "sid_type": "Standard Olfactory Identity",
+    "label": "SID-CH-N5",
+    "timestamp_genesis": "2026-04-26T17:00:00Z",
+    "owner_vault": "0x490A7922e4F6EDCca1267DC3A29C081d4477dB0F"
+  },
+
+  "technical_specification": {
+    "palette_9_channels": {
+      "red_spicy": {
+        "intensity": 20,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      },
+      "orange_citrus": {
+        "intensity": 13,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      },
+      "yellow_floral": {
+        "intensity": 41,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      },
+      "green_herbal": {
+        "intensity": 9,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      },
+      "blue_marine": {
+        "intensity": 164,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      },
+      "indigo_musk": {
+        "intensity": 5,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      },
+      "violet_woody": {
+        "intensity": 3,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      },
+      "white_diffusion": {
+        "intensity": 0,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      },
+      "black_intensity": {
+        "intensity": 0,
+        "scale": "0-255 normalized channel weight",
+        "type": "olfactory channel coefficient"
+      }
+    },
+
+    "molecular_anchors": [
+      {
+        "index": "S-001",
+        "cas": {
+          "registry": "CAS",
+          "id": "0101-00-0",
+          "validation": "synthetic_placeholder",
+          "note": "reference anchor for olfactory embedding space"
+        },
+        "concentration": 0.20
+      },
+      {
+        "index": "S-105",
+        "cas": {
+          "registry": "CAS",
+          "id": "10605-21-7",
+          "validation": "synthetic_placeholder",
+          "note": "reference anchor for olfactory embedding space"
+        },
+        "concentration": 0.80
+      }
+    ],
+
+    "vector_256_embedding": {
+      "type": "high_dimensional_olfactory_embedding",
+      "dimension": 256,
+      "encoding": "float32_vector_space",
+      "note": "machine-readable scent representation",
+      "hash_preview": "7E6F8A2B..."
+    }
+  },
+
+  "economic_layer": {
+    "licensing": "Scent-ID Commercial License V1",
+
+    "verification_api": "https://api.scent-id.global/v1/verify/SID-CH-N5",
+
+    "royalty_address": {
+      "network": "Base",
+      "address": "0x490A7922e4F6EDCca1267DC3A29C081d4477dB0F"
+    },
+
+    "payment_gateway": {
+      "btc_lightning": true,
+      "stablecoin_ready": true
+    },
+
+    "fees": {
+      "sid_issuance_fee_usd": 50,
+      "certification_fee_usd_per_year": 1500,
+      "api_usage_model": "pay_per_call"
+    }
+  },
+
+  "verification_proof": {
+    "method": "Zero-Knowledge Proof (ZKP Compatible)",
+    "genesis_hash_anchor": "0x82Fa5678...",
+    "immutability": "blockchain anchored reference system"
   }
 }
