@@ -112,6 +112,7 @@ Three-layer working architecture:
 Generate locked protocol PDF from `01_Constitution`:
 
 ```bash
+pip install -r requirements.txt
 python 02_Protocol/build_locked_pdf.py
 ```
 
@@ -133,3 +134,13 @@ Checks performed:
 - `.env` presence is reported (warning only, compatible with USB key workflow)
 - `02_Protocol/build_locked_pdf.py` executes successfully
 - `03_Application/ScentID_Master_Archive_LOCKED.pdf` is produced
+
+### CI Status
+
+GitHub Actions workflow:
+
+- `Verify Empire Restore` (`.github/workflows/verify.yml`)
+
+Badge:
+
+`https://github.com/chunchieh0811-cloud/Scent-ID-Protocol/actions/workflows/verify.yml/badge.svg`
