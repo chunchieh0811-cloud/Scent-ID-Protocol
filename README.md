@@ -98,3 +98,23 @@ Based on the **Kelly Criterion**: "Open Adoption, Imperial Taxation."
 
 **Powered by Aetherbit AI Agent Architecture**
 *(Planning · Memory · Tool Use · Perception)*
+
+---
+
+## Local Operations (Empire Restore)
+
+Three-layer working architecture:
+
+- `01_Constitution`: constitutional and master archive source documents
+- `02_Protocol`: protocol scripts and automation
+- `03_Application`: generated application artifacts (including locked PDFs)
+
+Generate locked protocol PDF from `01_Constitution`:
+
+```bash
+python 02_Protocol/build_locked_pdf.py
+```
+
+Expected output:
+
+- `03_Application/ScentID_Master_Archive_LOCKED.pdf`
