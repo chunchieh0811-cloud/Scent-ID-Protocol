@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Scent-ID Governance Notes
+    url: https://github.com/chunchieh0811-cloud/Scent-ID-Protocol
+    about: Review protocol context before filing issues.
