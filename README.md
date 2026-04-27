@@ -118,3 +118,18 @@ python 02_Protocol/build_locked_pdf.py
 Expected output:
 
 - `03_Application/ScentID_Master_Archive_LOCKED.pdf`
+
+### Quick Verification (Commander)
+
+Run one command to verify structure + PDF pipeline:
+
+```powershell
+.\verify.ps1
+```
+
+Checks performed:
+
+- `01_Constitution`, `02_Protocol`, `03_Application` all exist
+- `.env` presence is reported (warning only, compatible with USB key workflow)
+- `02_Protocol/build_locked_pdf.py` executes successfully
+- `03_Application/ScentID_Master_Archive_LOCKED.pdf` is produced
