@@ -1,0 +1,84 @@
+# Scent-ID OS V31 Security-Focused .gitignore
+
+# Security Files (L4_Security)
+L4_Security/L4_*_Inbox_Guardian.py
+L4_Security/L4_*_Secret_Sentinel.py
+L4_Security/L4_*_Digital_Seal.py
+L4_Security/L4_*_Anti_Hacker_Shield.py
+
+# Environment and Secrets
+.env*
+*.key
+*.pem
+*.p12
+master.key
+proton_2FA_recovery_codes.txt
+
+# Python Artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.temp
+execution_history.log
+vault_memory.log
+Security_Action_Log.json
+Digital_Seal_Log.txt
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+*.orig
+*.rej
+
+# Archives and Backups
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.bak
+*.backup
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+database/
+
+# Legacy Archives (Protected)
+L4_Security/Legacy_Archive/
