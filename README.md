@@ -1,2 +1,11 @@
-﻿# Scent-ID Core v38.0.0
-Standardized architecture.
+﻿# 📢 Scent-ID 系統正式公告 (v38.0.0)
+
+### 📅 發佈日期：2026-05-01
+### 🛡️ 核心狀態：已遷移至 GitHub 正式架構
+
+我們已完成 Scent-ID 基地的大規模重組：
+- **架構升級**：核心七層 (L1-L7) 與 Wiki 系統 (Wiki_System) 已標準化。
+- **治理更新**：憲法 v4.0.0 正式生效，啟動咒語鎖定為「SID專案」。
+- **路徑鎖定**：唯一真相來源位於 D:\Aetherbit\ScentID。
+
+*此公告由系統自動生成，確保雲端與本地端完全同步。*
