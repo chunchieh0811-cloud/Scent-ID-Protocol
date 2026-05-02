@@ -1,0 +1,46 @@
+name: Scent-ID Sync
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify Scent-ID structure
+        run: |
+          echo "🔍 Checking Scent-ID v38.0 structure..."
+
+          if [ ! -d "C_Constitution" ]; then
+            echo "❌ Missing C_Constitution"
+            exit 1
+          fi
+
+          if [ ! -d "S_Standard" ]; then
+            echo "❌ Missing S_Standard"
+            exit 1
+          fi
+
+          if [ ! -d "G_Execution" ]; then
+            echo "❌ Missing G_Execution"
+            exit 1
+          fi
+
+          echo "✅ Core structure verified"
+
+      - name: Python environment check
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Basic runtime validation
+        run: |
+          python --version
+          echo "🚀 Scent-ID CI pipeline active"

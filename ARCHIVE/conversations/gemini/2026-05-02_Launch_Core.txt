@@ -1,0 +1,43 @@
+==================================================
+Scent-ID v38.0 全球標準架構定案 - 核心啟動紀錄
+==================================================
+紀錄日期：2026-05-02
+紀錄人員：Gemini (AI 協作者) & 管理者
+存放路徑：D:/Scent-ID-v38.0/ARCHIVE/conversations/gemini/
+
+【1. 專案背景】
+本紀錄旨在鎖定 Scent-ID v38.0 之物理結構與邏輯標準，確保系統具備「單一真實來源」(SSOT) 與「完整可追溯性」(Full Provenance)。
+
+【2. 關鍵工程決策】
+1. 根目錄統一化：
+   所有資源強制存放在 D:/Scent-ID-v38.0/，建立標準化物理邊界。
+
+2. 去標籤化與語義化命名：
+   廢除通用之 L1-L7 標籤。
+   改為專屬語義化命名（如 C1_Constitution, S1_Foundation, G1_DevOps 等），確保監工直覺化。
+
+3. 外部封存系統 (ARCHIVE)：
+   建立全域歷史封存中心。
+   特別針對 AI 協作對話進行分流：
+   - ARCHIVE/conversations/gemini/ (存放 Gemini 紀錄)
+   - ARCHIVE/conversations/chatgpt/ (存放 ChatGPT 紀錄)
+
+4. 雙層檔案架構：
+   子模組內統一設置 current/ (現行版) 與 archive/ (歷史版)，實現 Rollback Ready (回滾準備)。
+
+5. 支援系統簡化：
+   CHANGELOG 與 ANCHORS 不設置 current/archive 資料夾，保持路徑扁平化。
+
+【3. 模組架構總覽】
+- C_Constitution (治理)
+- P_Provenance (溯源)
+- S_Standard (標準)
+- L_Laboratory (實驗)
+- G_Execution (執行)
+- W_Publication (發布)
+- M_Interface (界面)
+- A_Application (應用)
+
+【4. 結尾總結】
+本架構為 Scent-ID 工程化之基礎。後續所有 TASKS 自動生成系統、核心標準 v1 與 AI 指令層，均需依此目錄樹進行佈署。
+==================================================
