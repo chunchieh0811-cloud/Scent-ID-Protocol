@@ -1,4 +1,4 @@
-name: Scent-ID Sync
+name: Scent-ID Core Autonomous System
 
 on:
   push:
@@ -7,40 +7,40 @@ on:
     branches: [ "main" ]
 
 jobs:
-  sync:
+  core:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Verify Scent-ID structure
+      - name: SSOT Structure Check
         run: |
-          echo "🔍 Checking Scent-ID v38.0 structure..."
+          echo "🔍 Scent-ID SSOT Validation Start"
 
-          if [ ! -d "C_Constitution" ]; then
-            echo "❌ Missing C_Constitution"
-            exit 1
-          fi
+          REQUIRED_DIRS=(
+            "C_Constitution"
+            "S_Standard"
+            "G_Execution"
+            "L_Laboratory"
+            "P_Provenance"
+          )
 
-          if [ ! -d "S_Standard" ]; then
-            echo "❌ Missing S_Standard"
-            exit 1
-          fi
+          for dir in "${REQUIRED_DIRS[@]}"; do
+            if [ ! -d "$dir" ]; then
+              echo "❌ Missing: $dir"
+              exit 1
+            fi
+          done
 
-          if [ ! -d "G_Execution" ]; then
-            echo "❌ Missing G_Execution"
-            exit 1
-          fi
+          echo "✅ SSOT structure valid"
 
-          echo "✅ Core structure verified"
-
-      - name: Setup Python
+      - name: Runtime Check
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Runtime validation
+      - name: Execute Core Validation
         run: |
           python --version
-          echo "🚀 Scent-ID CI pipeline active"
+          echo "🚀 Scent-ID Core Pipeline Active"
