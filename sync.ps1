@@ -1,23 +1,27 @@
 ﻿Set-Location "D:\Scent-ID-v38.0"
 
-Write-Host "🚀 Scent-ID Auto Sync Start" -ForegroundColor Cyan
+Write-Host "🚀 Scent-ID AUTO SYSTEM START" -ForegroundColor Cyan
 
-git add .
+while ($true) {
 
-$status = git status --porcelain
+    git add .
 
-if ($status) {
+    $status = git status --porcelain
 
-    git commit -m "auto sync $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" --no-verify
+    if ($status) {
 
-    git pull origin main --rebase
+        git commit -m "auto sync $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" --no-verify
 
-    git push origin main
+        git pull origin main --rebase
 
-    Write-Host "✅ Sync Complete" -ForegroundColor Green
+        git push origin main
 
-} else {
+        Write-Host "✅ SYNC DONE" -ForegroundColor Green
 
-    Write-Host "🟡 No changes" -ForegroundColor Yellow
+    } else {
 
+        Write-Host "🟡 no changes" -ForegroundColor DarkYellow
+    }
+
+    Start-Sleep -Seconds 5
 }
