@@ -17,10 +17,6 @@ while ($true) {
         git push origin main
 
         Write-Host "✅ SYNC DONE" -ForegroundColor Green
-
-    } else {
-
-        Write-Host "🟡 no changes" -ForegroundColor DarkYellow
     }
 
     Start-Sleep -Seconds 5
